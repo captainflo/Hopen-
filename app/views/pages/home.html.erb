@@ -1,0 +1,9 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<% if user_signed_in? %>
+  <%= link_to edit_user_registration_path do %>
+    <%= image_tag current_user.avatar.url(:thumb), class: "navbar-brand page-scroll" %>
+      <% end %>
+<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"nav navbar-nav navbar-right" %></li>
+  <% end %>
+<%= render 'layouts/alerts' %>
