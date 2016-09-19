@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require new-age
+//= require gulpfile
 //= require turbolinks
 //= require_tree .
