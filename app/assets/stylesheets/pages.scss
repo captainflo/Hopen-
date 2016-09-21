@@ -30,7 +30,15 @@ border-color: #DA22FF;
   width: 40px;
   height: 40px;
 }
+@media (max-width: 768px){
+img.page-scroll{
+  margin-left: 15px;
+}
 
+img.page-scroll.navbar-header{
+  margin-left:-10px;
+  }
+}
 
 .navbar-default .nav > li > a{
   color: black;
@@ -45,6 +53,22 @@ color: black;
         color: #33acb7;
       }
 }
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+
+  .img-responsive_hand{
+    display:block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+  }
+
+
 /////////page_download/////
 .img_download{
   border-radius: 8px;
@@ -84,6 +108,22 @@ color: black;
   text-align: center;
 }
 
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 270px;
+  }
+
+  .img-responsive_hand{
+    display:block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 490px;
+
+  }
+
 
 /////////page_features/////
 .text_features{
@@ -111,8 +151,8 @@ color: black;
   margin-right: 40px;
   margin-top: 73px;
   border-radius: 3px;
+  text-align: center;
   }
-
 ////Page_contact////
 .principal_contact{
   display: flex;
