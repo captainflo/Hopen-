@@ -1,34 +1,87 @@
-<h2>Sign up</h2>
+  <div class="body_sign">
+<div class="content">
+  <h2 class="title_log">Sign up<%= image_tag"love2.png"%></h2>
+  <!--Echo out errors here. See example-->
+  <!--<p class=error>Error, wrong username or password used. Please, try again.-->
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+    <div class="mat-in">
+      <%= f.label :firstname %><br />
+      <%= f.text_field :firstname %>
+    </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <div class="mat-in">
+      <%= f.label :lastname %><br />
+      <%= f.text_field :lastname %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <div class="mat-in">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <div class="mat-in">
+      <%= f.label :password %>
+      </br>
+      <% if @minimum_password_length %>
+      <em class="sign_up_em">(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %>
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :avatar %>
-    <%= f.file_field :avatar %>
-  </div>
+      <div class="mat-in">
+        <%= f.label :password_confirmation %><br/>
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+      <div class="mat-in">
+      <%= f.label :avatar %>
+      </br>
+      </br>
+      <%= f.file_field :avatar %>
+      </div>
 
-<%= render "devise/shared/links" %>
+    <%= f.submit "Sign up", class:"log" %>
+    <%= render "devise/shared/links"%>
+    <%= link_to "Back", root_path, class: "link_log" %>
+    <% end %>
+</div>
+
+<div class="bg-boxes">
+      <svg width="300px" height="100%" id="col1">
+    <rect width="150px" height="150px" x="75px" y="75px" class="bubble" id="bub1" />
+  </svg>
+  <svg width="200px" height="100%" id="col2">
+    <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub2" />
+  </svg>
+  <svg width="260px" height="100%" id="col3">
+      <rect width="130px" height="130px" x="65px" y="65px" class="bubble" id="bub3" />
+  </svg>
+  <svg width="160px" height="100%" id="col4">
+      <rect width="80px" height="80px" x="40px" y="40px" class="bubble" id="bub4" />
+  </svg>
+  <svg width="240px" height="100%" id="col5">
+      <rect width="120px" height="120px" x="60px" y="60px" class="bubble" id="bub5" />
+  </svg>
+  <!--Here is a triangle-->
+  <svg width="200px" height="100%" id="col6">
+      <polygon points="50,150 100,50 150,150" class="bubble" id="bub6" />
+  </svg>
+  <svg width="200px" height="100%" id="col7">
+      <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub7" />
+  </svg>
+  <svg width="200px" height="100%" id="col8">
+      <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub8" />
+  </svg>
+  <svg width="200px" height="100%" id="col9">
+      <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub9" />
+  </svg>
+  <svg width="200px" height="100%" id="col10">
+      <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub10" />
+  </svg>
+  <svg width="100px" height="100%" id="col11">
+      <rect width="50px" height="50px" x="25px" y="25px" class="bubble" id="bub11" />
+  </svg>
+</div>
+</div>

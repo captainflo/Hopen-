@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+
+$text: #303336;
+$light-text: #8c98a8;
+$border: #CED5E0;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.user-card {
+  display: block;
+  font: 13px/23px "Raleway", Arial, sans-serif;
+  color: $text;
+  padding: 60px 0;
+  max-width: 600px;
+  max-height: 465px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_card {
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 465px;
+  background: white;
+  border-radius: 3px;
+  position: relative;
+  overflow: scroll;
+}
+
+.information {
+  text-align: center;
+}
+
+.avatar {
+  margin: 0 auto;
+  margin: -82px auto 15px;
+  display: block;
+  width: 100px;
+  border-radius: 50px;
+  border: 3px solid white;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.position {
+  font-size: 16px;
+  color: $light-text;
+  margin-bottom: 24px;
+}
+.mat-in_edit {
+  position:relative;
+  margin-bottom: 32px;
+
+  clear: both;
+}
+
+.title_edit{
+  display: block;
+  text-align: center;
+}
+
+.i_edit_password{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.em_edit{
+  float: left;
+  margin-top: -20px;
+}
+
+.link_edit{
+  display: block;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50px;
+  text-align: center;
+  color: black;
+  &:hover {
+					color: #fff;
+          border: 1px solid white;
+          text-decoration: none;
+				}
+}

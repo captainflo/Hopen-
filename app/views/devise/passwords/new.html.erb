@@ -1,16 +1,67 @@
-<h2>Forgot your password?</h2>
-
+<div class="body_sign">
+<div class="content">
+<h2 class="title_log">Forgot your password?<%= image_tag"love2.png"%></h2>
+<!--Echo out errors here. See example-->
+<!--<p class=error>Error, wrong username or password used. Please, try again.-->
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
+  <div class="mat-in">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
+  <div class="mat-in">
+    <%= f.submit "Send me reset password instructions", class:"log" %>
   </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+  <%- if controller_name != 'sessions' %>
+    <%= link_to "Log in", new_session_path(resource_name), class: "link_log" %><br />
+  <% end -%>
+
+  <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    <%= link_to "Sign up", new_registration_path(resource_name),class: "link_log" %><br />
+  <% end -%>
+
+  <%= link_to "Back", root_path, class: "link_back" %>
+  <% end %>
+
+</div>
+
+<div class="bg-boxes">
+    <svg width="300px" height="100%" id="col1">
+  <rect width="150px" height="150px" x="75px" y="75px" class="bubble" id="bub1" />
+</svg>
+<svg width="200px" height="100%" id="col2">
+  <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub2" />
+</svg>
+<svg width="260px" height="100%" id="col3">
+    <rect width="130px" height="130px" x="65px" y="65px" class="bubble" id="bub3" />
+</svg>
+<svg width="160px" height="100%" id="col4">
+    <rect width="80px" height="80px" x="40px" y="40px" class="bubble" id="bub4" />
+</svg>
+<svg width="240px" height="100%" id="col5">
+    <rect width="120px" height="120px" x="60px" y="60px" class="bubble" id="bub5" />
+</svg>
+<!--Here is a triangle-->
+<svg width="200px" height="100%" id="col6">
+    <polygon points="50,150 100,50 150,150" class="bubble" id="bub6" />
+</svg>
+<svg width="200px" height="100%" id="col7">
+    <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub7" />
+</svg>
+<svg width="200px" height="100%" id="col8">
+    <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub8" />
+</svg>
+<svg width="200px" height="100%" id="col9">
+    <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub9" />
+</svg>
+<svg width="200px" height="100%" id="col10">
+    <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub10" />
+</svg>
+<svg width="100px" height="100%" id="col11">
+    <rect width="50px" height="50px" x="25px" y="25px" class="bubble" id="bub11" />
+</svg>
+</div>
+</div>

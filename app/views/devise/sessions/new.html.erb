@@ -1,26 +1,64 @@
-<h2>Log in</h2>
+  <div class="body_sign">
+  <div class="content">
+    <h2 class="title_log">Login <%= image_tag"love2.png"%></h2>
+    <!--Echo out errors here. See example-->
+    <!--<p class=error>Error, wrong username or password used. Please, try again.-->
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="mat-in">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+      <div class="mat-in">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+      <% if devise_mapping.rememberable? -%>
+        <div class="mat-in">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end -%>
+      <%= f.submit "Log in", class:"log"%>
+      <% end %>
+        <%= render "devise/shared/links" %>
+        <%= link_to "Back", root_path, class: "link_back" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+  <div class="bg-boxes">
+    		<svg width="300px" height="100%" id="col1">
+      <rect width="150px" height="150px" x="75px" y="75px" class="bubble" id="bub1" />
+    </svg>
+    <svg width="200px" height="100%" id="col2">
+      <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub2" />
+    </svg>
+    <svg width="260px" height="100%" id="col3">
+        <rect width="130px" height="130px" x="65px" y="65px" class="bubble" id="bub3" />
+    </svg>
+    <svg width="160px" height="100%" id="col4">
+        <rect width="80px" height="80px" x="40px" y="40px" class="bubble" id="bub4" />
+    </svg>
+    <svg width="240px" height="100%" id="col5">
+        <rect width="120px" height="120px" x="60px" y="60px" class="bubble" id="bub5" />
+    </svg>
+    <!--Here is a triangle-->
+    <svg width="200px" height="100%" id="col6">
+        <polygon points="50,150 100,50 150,150" class="bubble" id="bub6" />
+    </svg>
+    <svg width="200px" height="100%" id="col7">
+        <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub7" />
+    </svg>
+    <svg width="200px" height="100%" id="col8">
+        <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub8" />
+    </svg>
+    <svg width="200px" height="100%" id="col9">
+        <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub9" />
+    </svg>
+    <svg width="200px" height="100%" id="col10">
+        <rect width="100px" height="100px" x="50px" y="50px" class="bubble" id="bub10" />
+    </svg>
+    <svg width="100px" height="100%" id="col11">
+        <rect width="50px" height="50px" x="25px" y="25px" class="bubble" id="bub11" />
+    </svg>
   </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

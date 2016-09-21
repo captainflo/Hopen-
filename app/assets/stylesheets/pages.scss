@@ -1,3 +1,252 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+header, #download, #contact, {
+  background: #2DAF94; /* fallback for old browsers */
+}
+
+.btn-outline{
+color: #232526; /* fallback for old browsers */
+color: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-color: #232526;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+
+color: #DA22FF; /* fallback for old browsers */
+color: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: none;
+border-color: #DA22FF;
+
+	}
+
+.img_avatar{
+  margin-top: 4px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.navbar-default .nav > li > a{
+  color: black;
+  &:hover {
+					color: #33acb7;
+				}
+}
+
+.navbar-default .navbar-header .navbar-brand {
+color: black;
+&:hover {
+        color: #33acb7;
+      }
+}
+/////////page_download/////
+.img_download{
+  border-radius: 8px;
+}
+
+@media (max-width: 438px){
+  .img_download{
+      margin-top: 10px;
+  }
+}
+//////////////////
+/////////nav_bar///////////
+@media (min-width: 768px){
+  .navbar-default .navbar-header .navbar-brand {
+      color: black;
+      &:hover {
+    					color: #33acb7;
+
+    				}
+    }
+    .navbar-default {
+      background: #FAFAFA; /* fallback for old browsers */
+        border-color: transparent;
+      }
+
+      @media (max-width: 768px){
+      .navbar-header {
+          float: right;
+      }
+    }
+
+//////Page_header////
+.header_title{
+  display: block;
+  border: 1px solid blue;
+  margin: 510px 0px 0px 0px;
+  text-align: center;
+}
+
+
+/////////page_features/////
+.text_features{
+  display: block;
+  max-width: 450px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  }
+
+.principal{
+  display: flex;
+  width: 768;
+  height: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.element {
+  border: 1px solid #7F7F7F;
+  width: 480px;
+  height: 249px;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 73px;
+  border-radius: 3px;
+  }
+
+////Page_contact////
+.principal_contact{
+  display: flex;
+  min-width: 768;
+  min-height: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.About{
+  max-width: 480px;
+  max-height: 249px;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 73px;
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+.friends{
+  max-width: 480px;
+  max-height: 249px;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 73px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.section_contact{
+  padding: 0px;
+}
+
+
+////Page_hopen_box///
+.principal_hopen_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 768px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.title_hopen{
+  text-align: center;
+}
+
+.element_box{
+  width: 220px;
+        height: 262px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        border: 1px solid #7F7F7F;
+        border-radius: 3px;
+        text-align: center;
+}
+
+.element_box_hopen{
+        width: 520px;
+        height: 262px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+
+        border-radius: 3px;
+}
+
+.key{
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 260px;
+}
+
+        .button{
+          width: 253px;
+          height: 55px;
+          margin-left: auto;
+          margin-right: auto;
+          }
+
+
+}
+
+@media (max-width: 1200px){
+.element_box_hopen{
+  width: 320px;
+}
+}
+@media (max-width: 826px){
+  //////////Page_hopen_box///////
+  .title_hopen{
+    text-align: center;
+  }
+  .principal_hopen_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 658px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .element_box_hopen{
+    max-width: 520px;
+    max-height: 262px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    border-radius: 3px;
+  }
+
+  .button{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+////////////////////////
+////Page_contact////
+  .About{
+    text-align: center;
+}
+
+.friends{
+  text-align: center;
+}
+//////
+
+}
