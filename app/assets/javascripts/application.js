@@ -14,10 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require new-age
-//= require gulpfile
 //= require turbolinks
 //= require_tree .
-
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});

@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue-webfont.woff') format('woff'),
+        url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+        url('../fonts/bebasneue-webfont.webfontABYyK1dn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.title_logo{
+  font-family:"BebasNeueRegular"
+}
+
 
 header, #download, #contact, {
   background: #2DAF94; /* fallback for old browsers */
@@ -48,9 +60,12 @@ img.page-scroll.navbar-header{
 }
 
 .navbar-default .navbar-header .navbar-brand {
-color: black;
+color: #2DAF94;
+font-family:"BebasNeueRegular";
+font-size: 20px;
 &:hover {
         color: #33acb7;
+
       }
 }
 

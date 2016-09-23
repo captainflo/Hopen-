@@ -10,17 +10,17 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a href="#page-top"><%= image_tag"love2.png", class:" page-scroll navbar-header"%></a>
-                <a class="navbar-brand page-scroll" href="#page-top">Hopen Family</a>
+                <a class="navbar-brand page-scroll title_logo" href="#page-top">Hopen Family</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a class="page-scroll" href="#features"><%= t "pages.home.header.navbar.feature" %></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download"><%= t "pages.home.header.navbar.download" %></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#hopen_box">Hopen Box</a>
@@ -33,10 +33,19 @@
                     <%= link_to edit_user_registration_path do %>
                     <%= image_tag current_user.avatar.url(:medium), class: " page-scroll img_avatar" %>
                     <% end %>
-                    <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"page-scroll" %></li>
+                    <li><%= link_to t('pages.home.header.navbar.sign_out'), destroy_user_session_path, method: :delete, class:"page-scroll" %></li>
                     <% else %>
-                    <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
+                    <li><%= link_to t('pages.home.header.navbar.sign_in'), new_user_session_path, class: "active" %></li>
                     <% end %>
+
+                    <% if I18n.locale == :fr %>
+                    <li><%= link_to_unless_current image_tag('flag5.png'), locale: "en"%></li>
+                    <% end %>
+                    <% if I18n.locale == :en %>
+                    <li><%= link_to_unless_current image_tag('flag6.png'), locale: "fr", class:"fr" %></li>
+                    <% end %>
+
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,9 +62,9 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>Hopen Family</h1>
-                            <p >I send photos to my Grand parents<br>
-                              They receiving it on their screen in live</p>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                            <p ><%= t "pages.home.header.description_1" %><br>
+                              <%= t "pages.home.header.description_2" %></p>
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "pages.home.header.button"%></a>
                         </div>
                     </div>
                 </div>
@@ -84,8 +93,8 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Hopen Family Maman</h2>
-                        <p class="text-muted">Check out what you can do with this app !</p>
+                        <h2><%= t "features.title" %></h2>
+                        <p class="text-muted"><%= t "features.title_under"%></p>
                         <hr>
 
                     </div>
@@ -95,16 +104,16 @@
           <div class="container">
               <div class='principal'>
                 <div class="element">
-                  <h3>Hopen Family Maman</h3>
-                  <p class="text-muted">Check out what you can do with this app !</p>
+                  <h3><%= t "features.title_1"%></h3>
+                  <p class="text-muted"><%= t "features.description_1"%></p>
                 </div>
                 <div class="element">
-                  <h3>Hopen Family Maman</h3>
-                  <p class="text-muted">Check out what you can do with this app !</p>
+                  <h3><%= t "features.title_2"%></h3>
+                  <p class="text-muted"><%= t "features.description_2"%></p>
                 </div>
                 <div class="element">
-                  <h3>Hopen Family Maman</h3>
-                  <p class="text-muted">Check out what you can do with this app !</p>
+                  <h3><%= t "features.title_3"%></h3>
+                  <p class="text-muted"><%= t "features.description_3"%></p>
                 </div>
               </div>
             </div>
@@ -114,8 +123,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Download application</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
+                    <h2 class="section-heading"><%= t "download.title"%></h2>
+                    <p><%= t "download.title_under"%></p>
                     <div class="badges">
                       <%= image_tag "app-store.jpg", class:'img_download' %>
                       <%= image_tag "google.jpg", class:'img_download'%>
@@ -133,9 +142,8 @@
         <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Box</h2>
                 <div class="principal_hopen_box">
                     <div class="element_box">
-                      <h3>famille</h3>
-                      <p>bkevkjv jkjjcek jkdjv kjfkjjk jkj fkjf hffhkffddf
-                      fdjfhdfjhfjhfdjfhd jfdhdj fhdfjdhfdj hfdj hf jdf </p>
+                      <h3><%= t "hopen_box.title_1"%></h3>
+                      <p><%= t "hopen_box.description_1"%></p>
                     </div>
                     <div class="element_box_hopen">
                       <div class='key'>
@@ -143,12 +151,11 @@
                     </div>
                     </div>
                     <div class="element_box">
-                      <h3>famille</h3>
-                      <p>bkevkjv jkjjcek jkdjv kjfkjjk jkj fkjf jflrehgj hfhdjfhe hfklh
-                      vkdjvvkfdjvkfvvfvkfvjfvf,b bjbf bsb sb </p>
+                      <h3><%= t "hopen_box.title_2"%></h3>
+                      <p><%= t "hopen_box.description_2"%></p>
                     </div>
                     <div class="button">
-                    <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
+                    <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "hopen_box.button"%></a>
                   </div>
                 </div>
         </div>
@@ -160,13 +167,13 @@
         <div class="container">
           <div class="principal_contact">
             <div class="About">
-              <h2>About</h2>
-              <p class="text-muted">Hopen family est une apllication pour blabalslbasbbasb labsabl blaa blazb blae</p>
+              <h2><%= t "contact.about" %></h2>
+              <p class="text-muted"><%= t "contact.about_description"%></p>
             </div>
             <hr>
             <div class="friends">
               <!--80X80-->
-              <h2>We <%= image_tag "love4.png", class:"fa fa-heart"%> new friends!</h2>
+              <h2><%= t "contact.love1"%><%= image_tag "love4.png", class:"fa fa-heart"%> <%= t "contact.love2"%></h2>
               <ul class="list-inline list-social">
                   <li>
                     <!--80X80-->
@@ -186,13 +193,13 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2016 Hopen Projet. All Rights Reserved.</p>
+            <p>&copy; <%= t "footer.copy" %></p>
             <ul class="list-inline">
                 <li>
-                    <a href="#">Privacy</a>
+                    <a href="#"><%= t "footer.privacy" %></a>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <a href="#"><%= t "footer.terms" %></a>
                 </li>
                 <li>
                     <a href="#">FAQ</a>

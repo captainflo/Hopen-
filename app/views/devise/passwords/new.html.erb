@@ -1,29 +1,29 @@
 <div class="body_sign">
 <div class="content">
-<h2 class="title_log">Forgot your password?<%= image_tag"love2.png"%></h2>
+<h2 class="title_log"><%= t 'link.forgot' %><%= image_tag"love2.png"%></h2>
 <!--Echo out errors here. See example-->
 <!--<p class=error>Error, wrong username or password used. Please, try again.-->
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="mat-in">
-    <%= f.label :email %><br />
+    <%= f.label t('edit.email') %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
 
   <div class="mat-in">
-    <%= f.submit "Send me reset password instructions", class:"log" %>
+    <%= f.submit t("password.button"), class:"log" %>
   </div>
 
   <%- if controller_name != 'sessions' %>
-    <%= link_to "Log in", new_session_path(resource_name), class: "link_log" %><br />
+    <%= link_to t('link.sign_in'), new_session_path(resource_name), class: "link_log" %><br />
   <% end -%>
 
   <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-    <%= link_to "Sign up", new_registration_path(resource_name),class: "link_log" %><br />
+    <%= link_to t('link.sign_up'), new_registration_path(resource_name),class: "link_log" %><br />
   <% end -%>
 
-  <%= link_to "Back", root_path, class: "link_back" %>
+  <%= link_to t('edit.back'), root_path, class: "link_back" %>
   <% end %>
 
 </div>

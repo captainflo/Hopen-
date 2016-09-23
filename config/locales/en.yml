@@ -20,4 +20,92 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  pages:
+    home:
+      header:
+        description_1: "I send photos to my Grand parents"
+        description_2: "They receiving it on their screen in live"
+        button: "Start Now for Free!"
+        navbar:
+          feature: "Features"
+          download: "Download"
+          hopen_box: "hopen Box"
+          sign_in: "Sign In"
+          sign_up: "Sign Up"
+          sign_out: "Sign Out"
+##################################
+  features:
+    title: "Hopen Family Mother"
+    title_under: "Check out what you can do with this app !"
+    title_1: "Title1"
+    description_1: "hello "
+    title_2: "Title2"
+    description_2: "hello 2"
+    title_3: "Title3"
+    description_3: "hello 3"
+###################################
+  download:
+    title: "Download application"
+    title_under: "Our app is available on any mobile device! Download now to get started!"
+###################################
+  hopen_box:
+    title_1: "Title1"
+    description_1: "description1"
+    title_2: "Title2"
+    description_2: "description2"
+    button: "Start Now for Free!"
+##################################
+  contact:
+    about: "About"
+    about_description: "Hopen Family is application for blablabla...."
+    love1: "We"
+    love2: "new friends!"
+##################################
+  footer:
+    copy: "2016 Hopen Projet. All Rights Reserved."
+    privacy: "Privacy"
+    terms: "Terms"
+##################################
+  sign_in:
+    title: "Sign In"
+    email: "email"
+    password: "Password"
+    remember_me: "Remember me"
+    log: "Log in"
+    back: "Back"
+#################################
+  sign_up:
+    title: "Sign up"
+    firstname: "Firstname"
+    lastname: "Lastname"
+    email: "Email"
+    password: "Password"
+    password_under: "characters minimum"
+    password_confirm: "Password confirmation"
+    avatar: "Avatar"
+    back: "Retour"
+###############################
+  edit:
+    title: "Edit User"
+    firstname: "Firstname"
+    lastname: "Lastname"
+    email: "Email"
+    password: "Password"
+    password_top: "leave blank if you don't want to change it"
+    password_under: "characters minimum"
+    password_confirm: "Password confirmation"
+    current_password: "Current password"
+    under_current_password: "we need your current password to confirm your changes"
+    avatar: "Avatar"
+    back: "Back"
+################################
+  link:
+    sign_in: "Sign in"
+    sign_up: "Sign up"
+    forgot: "Forgot your password?"
+    receive_confirm: "Didn't receive confirmation instructions?"
+    receive_unlock:  "Didn't receive unlock instructions?"
+    sign_in_with: "Sign in with"
+  ##############################
+    password:
+      button: "Send me instruction for password"

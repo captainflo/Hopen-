@@ -1,50 +1,50 @@
   <div class="body_sign">
 <div class="content">
-  <h2 class="title_log">Sign up<%= image_tag"love2.png"%></h2>
+  <h2 class="title_log"><%=t'sign_up.title'%><%= image_tag"love2.png"%></h2>
   <!--Echo out errors here. See example-->
   <!--<p class=error>Error, wrong username or password used. Please, try again.-->
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
     <div class="mat-in">
-      <%= f.label :firstname %><br />
+      <%= f.label t('sign_up.firstname') %><br />
       <%= f.text_field :firstname %>
     </div>
 
     <div class="mat-in">
-      <%= f.label :lastname %><br />
+      <%= f.label t('sign_up.lastname') %><br />
       <%= f.text_field :lastname %>
     </div>
 
     <div class="mat-in">
-      <%= f.label :email %><br />
+      <%= f.label t('sign_up.email') %><br />
       <%= f.email_field :email, autofocus: true %>
     </div>
 
     <div class="mat-in">
-      <%= f.label :password %>
+      <%= f.label t('sign_up.password') %>
       </br>
       <% if @minimum_password_length %>
-      <em class="sign_up_em">(<%= @minimum_password_length %> characters minimum)</em>
+      <em class="sign_up_em">(<%= @minimum_password_length %> <%= t'sign_up.password_under'%>)</em>
       <% end %>
       <%= f.password_field :password, autocomplete: "off" %>
     </div>
 
       <div class="mat-in">
-        <%= f.label :password_confirmation %><br/>
+        <%= f.label t('sign_up.password_confirm') %><br/>
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
       <div class="mat-in">
-      <%= f.label :avatar %>
+      <%= f.label t('sign_up.avatar') %>
       </br>
       </br>
       <%= f.file_field :avatar %>
       </div>
 
-    <%= f.submit "Sign up", class:"log" %>
+    <%= f.submit t('sign_up.title'), class:"log" %>
     <%= render "devise/shared/links"%>
-    <%= link_to "Back", root_path, class: "link_log" %>
+    <%= link_to t('sign_up.back'), root_path, class: "link_log" %>
     <% end %>
 </div>
 

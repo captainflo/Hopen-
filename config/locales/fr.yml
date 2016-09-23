@@ -1,0 +1,111 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+fr:
+  pages:
+    home:
+      header:
+        description_1: "J'envoie des photos à mes grands-parents"
+        description_2: "Ils reçoivent leur affichage en direct"
+        button: "Commencez gratuitement!"
+        navbar:
+          feature: "Fonctionalité"
+          download: "Télécharger"
+          hopen_box: "hopen Box"
+          sign_in: "Connecter"
+          sign_up: "Enregistrer"
+          sign_out: "Déconnecter"
+#####################################
+  features:
+    title: "Hopen Family Maman"
+    title_under: "Regarde ce que peux faire l'app !"
+    title_1: "Titre1"
+    description_1: "salut"
+    title_2: "Titre2"
+    description_2: "salut 2"
+    title_3: "Titre3"
+    description_3: "salut 3"
+###################################
+  download:
+    title: "Télécharger l'application"
+    title_under: "Notre application est disponible sur tout les terminale! Télécharge maintenant et commence l'aventure"
+###################################
+  hopen_box:
+    title_1: "Titre1"
+    description_1: "description1"
+    title_2: "Titre2"
+    description_2: "description2"
+    button: "Commencez maintenant!"
+##################################
+  contact:
+    about: "A propos"
+    about_description: "hopen family est une application pour ....."
+    love1: "Nous"
+    love2: "nouveaux amis"
+##################################
+  footer:
+    copy: "2016 Hopen Projet. tout droit réservé."
+    privacy: "Mentions légales"
+    terms: "Conditions d'utilisation"
+##################################
+  sign_in:
+    title: "Connecter"
+    email: "Adresse mail"
+    password: "Mot de passe"
+    remember_me: "Se souvenir de moi"
+    log: "Connecter"
+    back: "Retour"
+#################################
+  sign_up:
+    title: "Enregistrer"
+    firstname: "Prenom"
+    lastname: "Nom"
+    email: "Adresse mail"
+    password: "Mot de passe"
+    password_under: "charactères minimum"
+    password_confirm: "Confirmation Mot de passe"
+    avatar: "Photo profile"
+    back: "Retour"
+###############################
+  edit:
+    title: "Modifier l'utilisateur"
+    firstname: "Prenom"
+    lastname: "Nom"
+    email: "Adresse mail"
+    password: "Mot de passe"
+    password_top: "Laisser en blanc si vous ne voulez pas changer"
+    password_under: "charactères minimum"
+    password_confirm: "Confirmation Mot de passe"
+    current_password: "Mot de passe actuel"
+    under_current_password: "nous avons besoin de votre mot de passe actuel pour confirmer vos modifications"
+    avatar: "Photo profile"
+    back: "Retour"
+################################
+  link:
+    sign_in: "Connecter"
+    sign_up: "Enregistrer"
+    forgot: "Mot de passe oublié?"
+    receive_confirm: "N'a pas reçu les instructions de confirmation"
+    receive_unlock: "N'a pas reçu les instructions de déverrouillage ?"
+    sign_in_with: "Connecter avec"
+################################
+  password:
+    button: "Envoyez-moi la réinitialisation du mot de passe"
