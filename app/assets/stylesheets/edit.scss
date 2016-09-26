@@ -1,91 +1,73 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
-
-$text: #303336;
-$light-text: #8c98a8;
-$border: #CED5E0;
-
-*, *:before, *:after {
-  box-sizing: border-box;
+.body_edit {
+  background: #50a3a2;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  overflow:scroll;
+  height: 100%;
 }
 
-.user-card {
-  display: block;
-  font: 13px/23px "Raleway", Arial, sans-serif;
-  color: $text;
-  padding: 60px 0;
-  max-width: 600px;
-  max-height: 465px;
+.block_principal{
+  margin-top: 60px;
+  max-width: 1400px;
+  min-height: 600px;
+  background-color: white;
+  border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container_card {
-  margin: 0 auto;
-  max-width: 600px;
-  max-height: 465px;
-  background: white;
-  border-radius: 3px;
-  position: relative;
-  overflow: scroll;
-}
-
-.information {
+.title_log{
   text-align: center;
 }
 
+.name{
+  text-align: center;
+  font-size: 18px;
+}
+
 .avatar {
-  margin: 0 auto;
-  margin: -82px auto 15px;
   display: block;
+  margin: -50px auto 10px auto;
   width: 100px;
+  height: 100px;
   border-radius: 50px;
   border: 3px solid white;
 }
 
-.name {
-  font-size: 22px;
+.edit_avatar_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-radius: 25px;
 }
 
-.position {
-  font-size: 16px;
-  color: $light-text;
-  margin-bottom: 24px;
+.block_edit{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  max-width: 1200px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: auto;
 }
-.mat-in_edit {
-  position:relative;
-  margin-bottom: 32px;
 
-  clear: both;
+.block1{
+  width: 300px;
+  height: 200px;
+}
+
+.block2{
+  min-width: 400px;
+  height: 100px;
 }
 
 .title_edit{
+  position:relative;
+}
+
+.back{
   display: block;
-  text-align: center;
-}
-
-.i_edit_password{
-  text-align: center;
-  margin-top: 20px;
-}
-
-.em_edit{
-  float: left;
-  margin-top: -20px;
-}
-
-.link_edit{
-  display: block;
-  border: 1px solid white;
-  border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  width: 50px;
-  text-align: center;
-  color: black;
-  &:hover {
-					color: #fff;
-          border: 1px solid white;
-          text-decoration: none;
-				}
+  margin-left: 10px;
 }

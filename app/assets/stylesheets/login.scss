@@ -23,11 +23,7 @@ p{
   font-weight: 300;
   height: 100%; /*Allow spacing based on window height*/
   margin: 0;
-  min-height: 240px;
 
-}
-.title_log{
-  text-align: center;
 }
 
 .sign_up_em{
@@ -76,6 +72,7 @@ p{
   display: block;
   left: 50%;
   max-width: 360px;
+  max-height: 600px;
   position: absolute;
   top: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -96,6 +93,12 @@ form {
 .mat-in {
   position: relative;
   margin-bottom: 32px;
+}
+
+.mat-in_edit{
+  position: relative;
+  margin-bottom: 8px;
+  margin-top: -5px;
 }
 
 input {
@@ -219,7 +222,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .bg-boxes{
 /*Set the container for the svg elements to take up the whole window and hide objects outside of the window*/
   height: 100%;
-  min-height: 240px;
+  min-height: 640px;
   position: absolute;
   overflow: hidden;
   width: 100%;

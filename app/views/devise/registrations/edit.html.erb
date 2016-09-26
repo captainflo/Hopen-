@@ -1,68 +1,64 @@
-<div class="body_sign">
-  <div class="user-card">
-    <div class="container_card">
-      <%= image_tag "family.png",class:"hero-image" %>
-
-      <div class="information">
-        <%= image_tag(resource.avatar,class:"avatar")if resource.avatar? %>
+<div class="body_edit">
+  <div class="block_principal">
+    <%= link_to (image_tag"off1.png"), root_path, class: "back" %>
+    <div class="edit_avatar_img">
+      <%= image_tag(resource.avatar,class:"avatar")if resource.avatar? %>
         <div class="name">
           <%= @user.firstname %> <%= @user.lastname %>
+          <h2 class="title_log"><%= t "edit.title"%></h2>
         </div>
-        <h2 class="title_log"><%= t "edit.title"%></h2>
-  <!--Echo out errors here. See example-->
-  <!--<p class=error>Error, wrong username or password used. Please, try again.-->
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
+    <div class="block_edit">
 
-    <div class="mat-in_edit">
-      <%= f.label t('edit.firstname'), class:"title_edit" %><br />
-      <%= f.text_field :firstname, autofocus: true %>
-    </div>
+      <div class="block1">
+        <div class="min_block">
+          <%= f.label t('edit.firstname'), class:"title_edit" %><br />
+          <%= f.text_field :firstname, autofocus: true %>
+        </div>
+        <div class="min_block">
+          <%= f.label t('edit.lastname'), class:"title_edit" %><br />
+          <%= f.text_field :lastname %>
+        </div>
+        <div class="min_block">
+          <%= f.label t('edit.email'), class:"title_edit" %><br />
+          <%= f.email_field :email%>
+        </div>
+      </div>
 
-    <div class="mat-in_edit">
-      <%= f.label t('edit.lastname'), class:"title_edit" %><br />
-      <%= f.text_field :lastname %>
-    </div>
-
-    <div class="mat-in_edit">
-      <%= f.label t('edit.email'), class:"title_edit" %><br />
-      <%= f.email_field :email%>
-    </div>
-
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-    <% end %>
+      <% end %>
+      <div class="block1">
+        <div class="min_block">
+          <%= f.label t('edit.password'), class:"title_edit" %><br> <i class="i_edit_password">(<%= t 'edit.password_top' %>)</i><br/>
+          <%= f.password_field :password, autocomplete: "off" %>
+          <% if @minimum_password_length %>
 
-    <div class="mat-in_edit">
-      <%= f.label t('edit.password'), class:"title_edit" %> <i class="i_edit_password">(<%= t 'edit.password_top' %>)</i><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-      <% if @minimum_password_length %>
-        <br />
-        <em class="em_edit"><%= @minimum_password_length %> <%= t'edit.password_under'%></em>
+          <em class="em_edit"><%= @minimum_password_length %> <%= t'edit.password_under'%></em>
+          <% end %>
+        </div>
+
+        <div class="min_block">
+          <%= f.label t('edit.password_confirm'),class:"title_edit" %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+      </div>
+
+      <div class="block1">
+        <div class="min_block">
+          <%= f.label t('edit.avatar'),class:"title_edit" %>
+          <%= f.file_field :avatar %>
+        </div>
+        <div class="min_block">
+        <%= f.label t('edit.current_password'),class:"title_edit" %><br /> <i>(<%= t"edit.under_current_password" %>)</i><br />
+        <%= f.password_field :current_password, autocomplete: "off" %>
+      </div>
+      <br>
+      <%= f.submit t('edit.title'), class:"log" %>
+      </div>
       <% end %>
     </div>
-
-    <div class="mat-in_edit">
-      <%= f.label t('edit.password_confirm'),class:"title_edit" %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
-    </div>
-
-    <div class="mat-in_edit">
-      <%= f.label t('edit.current_password'),class:"title_edit" %><br /> <i>(<%= t"edit.under_current_password" %>)</i><br />
-      <%= f.password_field :current_password, autocomplete: "off" %>
-    </div>
-
-    <div class="mat-in_edit">
-      <%= image_tag(resource.avatar.url(:thumb))if resource.avatar? %>
-      <%= f.label t('edit.avatar'),class:"title_edit" %>
-      <%= f.file_field :avatar %>
-    </div>
-
-    <%= f.submit t('edit.title'), class:"log" %>
-    <% end %>
-
-      </div> <!-- end information -->
-    </div> <!-- end container -->
-      <%= link_to t('edit.back'), root_path, class: "link_edit" %>
-  </div> <!-- end user-card -->
+  </div>
 </div>

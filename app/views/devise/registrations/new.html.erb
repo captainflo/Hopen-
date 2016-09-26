@@ -6,22 +6,22 @@
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
-    <div class="mat-in">
+    <div class="mat-in_edit">
       <%= f.label t('sign_up.firstname') %><br />
       <%= f.text_field :firstname %>
     </div>
 
-    <div class="mat-in">
+    <div class="mat-in_edit">
       <%= f.label t('sign_up.lastname') %><br />
       <%= f.text_field :lastname %>
     </div>
 
-    <div class="mat-in">
+    <div class="mat-in_edit">
       <%= f.label t('sign_up.email') %><br />
       <%= f.email_field :email, autofocus: true %>
     </div>
 
-    <div class="mat-in">
+    <div class="mat-in_edit">
       <%= f.label t('sign_up.password') %>
       </br>
       <% if @minimum_password_length %>
@@ -30,12 +30,12 @@
       <%= f.password_field :password, autocomplete: "off" %>
     </div>
 
-      <div class="mat-in">
+      <div class="mat-in_edit">
         <%= f.label t('sign_up.password_confirm') %><br/>
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
-      <div class="mat-in">
+      <div class="mat-in_edit">
       <%= f.label t('sign_up.avatar') %>
       </br>
       </br>

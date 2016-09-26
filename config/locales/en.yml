@@ -23,20 +23,22 @@ en:
   pages:
     home:
       header:
-        description_1: "I send photos to my Grand parents"
-        description_2: "They receiving it on their screen in live"
-        button: "Start Now for Free!"
+        title: "Hopen Family"
+        description_1: "I can finally send photos to my Grandparents"
+        description_2: "They instantly receive news from us"
+        button: "Start Now"
         navbar:
-          feature: "Features"
+          feature: "Concept"
           download: "Download"
-          hopen_box: "hopen Box"
+          hopen_box: "Features"
           sign_in: "Sign In"
           sign_up: "Sign Up"
           sign_out: "Sign Out"
 ##################################
   features:
-    title: "Hopen Family Mother"
-    title_under: "Check out what you can do with this app !"
+    title: "Concept"
+    title_under_1: "We have developed Hopen Family to fight against our grandparents loneliness."
+    title_under_2: "Far less connected as we are, they need intuitive and easy to use communication tools"
     title_1: "Title1"
     description_1: "hello "
     title_2: "Title2"
@@ -45,24 +47,26 @@ en:
     description_3: "hello 3"
 ###################################
   download:
-    title: "Download application"
+    title: "Download our App"
     title_under: "Our app is available on any mobile device! Download now to get started!"
 ###################################
   hopen_box:
-    title_1: "Title1"
-    description_1: "description1"
-    title_2: "Title2"
-    description_2: "description2"
+    title_1: "Grandparents"
+    description_1: "Benefit from family content without technical intervention"
+    title_2: "Family"
+    description_2: "Post contents via the Hopen Family App"
+    description_3: "Manage multi-accounts settings"
+    description_4: "Receive family notifications"
     button: "Start Now for Free!"
 ##################################
   contact:
     about: "About"
-    about_description: "Hopen Family is application for blablabla...."
+    about_description: "Hopen Family is an App designed for our grandparents to bring them back into our connected world. This project has been developed by the Hopen Project Corporation. "
     love1: "We"
     love2: "new friends!"
 ##################################
   footer:
-    copy: "2016 Hopen Projet. All Rights Reserved."
+    copy: "2016 Hopen Project. All Rights Reserved."
     privacy: "Privacy"
     terms: "Terms"
 ##################################

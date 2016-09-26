@@ -10,7 +10,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a href="#page-top"><%= image_tag"love2.png", class:" page-scroll navbar-header"%></a>
-                <a class="navbar-brand page-scroll title_logo" href="#page-top">Hopen Family</a>
+                <a class="navbar-brand page-scroll title_logo" href="#page-top"><%= t "pages.home.header.title"%></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,7 +23,7 @@
                         <a class="page-scroll" href="#download"><%= t "pages.home.header.navbar.download" %></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#hopen_box">Hopen Box</a>
+                        <a class="page-scroll" href="#hopen_box"><%= t "pages.home.header.navbar.hopen_box" %></a>
                     </li>
 
                     <li>
@@ -61,9 +61,10 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>Hopen Family</h1>
-                            <p ><%= t "pages.home.header.description_1" %><br>
-                              <%= t "pages.home.header.description_2" %></p>
+                          <h1>Hopen Family</h1>
+                            <h2><%= t "pages.home.header.description_1" %><br>
+                              <%= t "pages.home.header.description_2" %></h2>
+                              <br>
                             <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "pages.home.header.button"%></a>
                         </div>
                     </div>
@@ -75,7 +76,12 @@
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                                     <!-- size 458x923 -->
-                                    <%= image_tag"test6.png",class:"img-responsive"%>
+                                    <% if I18n.locale == :fr %>
+                                    <%= image_tag"test8.png",class:"img-responsive"%>
+                                    <% end %>
+                                    <% if I18n.locale == :en %>
+                                    <%= image_tag"test7.png",class:"img-responsive"%>
+                                    <% end %>
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -94,29 +100,54 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
                         <h2><%= t "features.title" %></h2>
-                        <p class="text-muted"><%= t "features.title_under"%></p>
+                        <p class="text-muted"><%= t "features.title_under_1"%><br><%= t "features.title_under_2"%></p>
                         <hr>
 
                     </div>
                 </div>
             </div>
           </div>
-          <div class="container">
+
               <div class='principal'>
                 <div class="element">
-                  <h3><%= t "features.title_1"%></h3>
-                  <p class="text-muted"><%= t "features.description_1"%></p>
+                  <!--<h3><%= t "features.title_1"%></h3>
+                  <p class="text-muted"><%= t "features.description_1"%></p>-->
+                  <div class="screen">
+                    <% if I18n.locale == :fr %>
+                    <%= image_tag "papy.png"%>
+                    <% end %>
+                    <% if I18n.locale == :en %>
+                    <%= image_tag "mamy.png"%>
+                    <% end %>
+                  </div>
                 </div>
+
                 <div class="element">
-                  <h3><%= t "features.title_2"%></h3>
-                  <p class="text-muted"><%= t "features.description_2"%></p>
+                  <!-- <h3><%= t "features.title_2"%></h3>
+                  <p class="text-muted"><%= t "features.description_2"%></p>-->
+                  <div class="screen">
+                    <% if I18n.locale == :fr %>
+                    <%= image_tag "papa.png"%>
+                    <% end %>
+                    <% if I18n.locale == :en %>
+                    <%= image_tag "dad.png"%>
+                    <% end %>
+                  </div>
                 </div>
+
                 <div class="element">
-                  <h3><%= t "features.title_3"%></h3>
-                  <p class="text-muted"><%= t "features.description_3"%></p>
+                  <!--<h3><%= t "features.title_3"%></h3>
+                  <p class="text-muted"><%= t "features.description_3"%></p>-->
+                  <div class="screen">
+                    <% if I18n.locale == :fr %>
+                    <%= image_tag "jeunes.png"%>
+                    <% end %>
+                    <% if I18n.locale == :en %>
+                    <%= image_tag "kids.png"%>
+                    <% end %>
                 </div>
-              </div>
             </div>
+          </div>
     </section>
 
     <section id="download" class="download bg-primary text-center">
@@ -139,7 +170,7 @@
     <section id="hopen_box">
 
       <div class="container">
-        <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Box</h2>
+        <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Family</h2>
                 <div class="principal_hopen_box">
                     <div class="element_box">
                       <h3><%= t "hopen_box.title_1"%></h3>
@@ -147,12 +178,14 @@
                     </div>
                     <div class="element_box_hopen">
                       <div class='key'>
-                      <%= image_tag "ok2.png"%>
+                      <%= image_tag "hopen.png"%>
                     </div>
                     </div>
                     <div class="element_box">
                       <h3><%= t "hopen_box.title_2"%></h3>
                       <p><%= t "hopen_box.description_2"%></p>
+                      <p><%= t "hopen_box.description_3"%></p>
+                      <p><%= t "hopen_box.description_4"%></p>
                     </div>
                     <div class="button">
                     <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "hopen_box.button"%></a>
@@ -167,13 +200,13 @@
         <div class="container">
           <div class="principal_contact">
             <div class="About">
-              <h2><%= t "contact.about" %></h2>
-              <p class="text-muted"><%= t "contact.about_description"%></p>
+              <h2 class="text_friends_title"><%= t "contact.about" %></h2>
+              <p class="text-muted_frineds"><%= t "contact.about_description"%></p>
             </div>
             <hr>
             <div class="friends">
               <!--80X80-->
-              <h2><%= t "contact.love1"%><%= image_tag "love4.png", class:"fa fa-heart"%> <%= t "contact.love2"%></h2>
+              <h2 class="text_friends_title"><%= t "contact.love1"%><%= image_tag "logoblanc.png", class:"fa fa-heart"%> <%= t "contact.love2"%></h2>
               <ul class="list-inline list-social">
                   <li>
                     <!--80X80-->
