@@ -53,10 +53,12 @@ fr:
   hopen_box:
     title_1: "Grands-Parents"
     description_1: "profitent des contenus sans aucune intervention technique"
-    title_2: "Famille"
-    description_2: "Poste le contenu sur l'App Hopen Family"
-    description_3: "Gère l'espace multi-comptes"
-    description_4: "Reçoit des notifications de la famille"
+    title_2: "Hopen"
+    description_2: "Diffuse automatiquement le contenu"
+    title_3: "Famille"
+    description_3: "Poste le contenu sur l'app Hopen Family,"
+    description_4: "Gère l'espace multi-comptes"
+    description_5: "Reçoit des notifications de la famille"
     button: "Commencez maintenant!"
 ##################################
   contact:
@@ -69,6 +71,7 @@ fr:
     copy: "2016 Hopen Project. Tout droits réservés."
     privacy: "Mentions légales"
     terms: "Conditions d'utilisation"
+    contact: "Contact nous"
 ##################################
   sign_in:
     title: "Connecter"
@@ -113,3 +116,7 @@ fr:
 ################################
   password:
     button: "Envoyez-moi la réinitialisation du mot de passe"
+################################
+  team:
+    description_1: "We are passionate and confident in the success of this solution."
+    description_2: "Complementary skills, strong social values shared and demonstrated expertise in the health sector."

@@ -52,11 +52,13 @@ en:
 ###################################
   hopen_box:
     title_1: "Grandparents"
-    description_1: "Benefit from family content without technical intervention"
-    title_2: "Family"
-    description_2: "Post contents via the Hopen Family App"
-    description_3: "Manage multi-accounts settings"
-    description_4: "Receive family notifications"
+    description_1: "Enjoy their family pictures without having to become geeks."
+    title_2: "Hopen"
+    description_2: "Automatically broadcast the content"
+    title_3: "Family"
+    description_3: "Post contents via the App"
+    description_4: "Manage multi-accounts area"
+    description_5: "Receive family notifications"
     button: "Start Now for Free!"
 ##################################
   contact:
@@ -69,6 +71,7 @@ en:
     copy: "2016 Hopen Project. All Rights Reserved."
     privacy: "Privacy"
     terms: "Terms"
+    contact: "Contact us"
 ##################################
   sign_in:
     title: "Sign In"
@@ -113,3 +116,7 @@ en:
   ##############################
     password:
       button: "Send me instruction for password"
+################################
+  team:
+    description_1: "We are passionate and confident in the success of this solution."
+    description_2: "Complementary skills, strong social values shared and demonstrated expertise in the health sector."

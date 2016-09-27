@@ -168,32 +168,35 @@
 
 
     <section id="hopen_box">
-
-      <div class="container">
-        <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Family</h2>
-                <div class="principal_hopen_box">
-                    <div class="element_box">
-                      <h3><%= t "hopen_box.title_1"%></h3>
-                      <p><%= t "hopen_box.description_1"%></p>
-                    </div>
-                    <div class="element_box_hopen">
-                      <div class='key'>
-                      <%= image_tag "hopen.png"%>
-                    </div>
-                    </div>
-                    <div class="element_box">
-                      <h3><%= t "hopen_box.title_2"%></h3>
-                      <p><%= t "hopen_box.description_2"%></p>
-                      <p><%= t "hopen_box.description_3"%></p>
-                      <p><%= t "hopen_box.description_4"%></p>
-                    </div>
-                    <div class="button">
-                    <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "hopen_box.button"%></a>
-                  </div>
-                </div>
+      <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Family</h2>
+      <div class='principal'>
+        <div class="element">
+          <div class="screen">
+            <%= image_tag "hopen.png"%>
+          </div>
+          <h3><%= t "hopen_box.title_1"%></h3>
+          <p><%= t "hopen_box.description_1"%></p>
         </div>
 
-        <div class="overlay"></div>
+        <div class="element">
+          <div class="screen">
+            <%= image_tag "hopen.png"%>
+          </div>
+          <h3><%= t "hopen_box.title_2"%></h3>
+          <p><%= t "hopen_box.description_2"%></p>
+        </div>
+
+        <div class="element">
+          <div class="screen">
+            <%= image_tag "hopen.png"%>
+          </div>
+          <h3><%= t "hopen_box.title_3"%></h3>
+          <p><%= t "hopen_box.description_3"%><br>
+            <%= t "hopen_box.description_4"%><br>
+            <%= t "hopen_box.description_5"%>
+          </p>
+        </div>
+    </div>
     </section>
 
     <section class="section_contact" id="contact" class="contact bg-primary">
@@ -201,7 +204,9 @@
           <div class="principal_contact">
             <div class="About">
               <h2 class="text_friends_title"><%= t "contact.about" %></h2>
-              <p class="text-muted_frineds"><%= t "contact.about_description"%></p>
+              <p class="text-muted_frineds"><%= t "contact.about_description"%>
+
+              </p>
             </div>
             <hr>
             <div class="friends">
@@ -229,15 +234,16 @@
             <p>&copy; <%= t "footer.copy" %></p>
             <ul class="list-inline">
                 <li>
-                    <a href="#"><%= t "footer.privacy" %></a>
+                    <%= link_to t("footer.privacy"), pages_mention_path, class: "link_back" %>
                 </li>
                 <li>
-                    <a href="#"><%= t "footer.terms" %></a>
+                    <%= link_to "Team", pages_team_path, class: "link_back" %>
                 </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
+                </ul>
+
+                  <%= mail_to "hopenfamily@gmail.com", class:"link_back_email" do %>
+                    <%=t"footer.contact", class:"back_link"%>: <span>hopenfamily@gmail.com</span>
+                  <% end %>
         </div>
     </footer>
 </body>

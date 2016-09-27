@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'pages/mention'
+  get 'pages/team'
+
   devise_for :users
   root to: "pages#home"
 

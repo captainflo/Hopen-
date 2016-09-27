@@ -39,6 +39,17 @@ p{
           text-decoration: none;
 				}
 }
+.link_back_email{
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  margin-top: 5px;
+  color: #2DAF94;
+  &:hover {
+					color: #33acb7;
+          text-decoration: none;
+				}
+}
 
 .link_back{
   float: right;
