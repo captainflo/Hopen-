@@ -172,7 +172,7 @@
       <div class='principal'>
         <div class="element">
           <div class="screen">
-            <%= image_tag "hopen.png"%>
+            <%= image_tag "family2.png"%>
           </div>
           <h3><%= t "hopen_box.title_1"%></h3>
           <p><%= t "hopen_box.description_1"%></p>
@@ -188,7 +188,7 @@
 
         <div class="element">
           <div class="screen">
-            <%= image_tag "hopen.png"%>
+            <%= image_tag "family1.png"%>
           </div>
           <h3><%= t "hopen_box.title_3"%></h3>
           <p><%= t "hopen_box.description_3"%><br>
@@ -204,9 +204,7 @@
           <div class="principal_contact">
             <div class="About">
               <h2 class="text_friends_title"><%= t "contact.about" %></h2>
-              <p class="text-muted_frineds"><%= t "contact.about_description"%>
-
-              </p>
+              <p class="text-muted_frineds"><%= t "contact.about_description"%></p>
             </div>
             <hr>
             <div class="friends">
@@ -239,11 +237,10 @@
                 <li>
                     <%= link_to "Team", pages_team_path, class: "link_back" %>
                 </li>
-                </ul>
-
-                  <%= mail_to "hopenfamily@gmail.com", class:"link_back_email" do %>
-                    <%=t"footer.contact", class:"back_link"%>: <span>hopenfamily@gmail.com</span>
-                  <% end %>
+            </ul>
+            <%= mail_to "nelly@hopenproject.com", class:"link_back_email" do %>
+            <%=t"footer.contact", class:"back_link"%>
+            <% end %>
         </div>
     </footer>
 </body>

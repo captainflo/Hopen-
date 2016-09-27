@@ -120,3 +120,37 @@ en:
   team:
     description_1: "We are passionate and confident in the success of this solution."
     description_2: "Complementary skills, strong social values shared and demonstrated expertise in the health sector."
+################################
+  mention:
+    title: 'Mentions légales'
+    title_1: "Editeur et responsable de la publication"
+    description_1: "La Société Hopen Project au capital de 8000 Euros, représentée en la personne de Madame Nelly MEUNIER CEO, Monsieur Pierre MEUNIER CTO et Monsieur Yoann EBRARD CFO en leur qualité d’associés."
+    description_2: "Les propos tenus sur ce Site Web ne représentent que et uniquement l’opinion de leur auteur, et n’engagent pas les sociétés, entreprises ou collectifs auxquels il contribue ou dont il peut être associé ou employé."
+    title_2: "Hébergement"
+    description_3: "Ce Site Web est hébergé par OVH."
+    title_3: "Propriétaire du site"
+    description_4: "Nous vous informons que le présent Site Web est la propriété de la société Hopen Project."
+    title_4: "Données personnelles"
+    description_5: "Conformément aux articles 38 à 40 de la loi du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, vous avez un droit d’accès, de modification et d’opposition sur vos données personnelles enregistrées sur ce Site Web."
+    title_5: "Contenu et comportement de l'utilisateur"
+    description_6: "Vous êtes entièrement responsable de l'ensemble des informations, données, textes, logiciels, musiques, sons, photographies, dessins, vidéos, messages, tags et autres contenus que vous transmettez via ce Site Web. Vous vous engagez à ne rien faire, ou à ne transmettre aucun contenu via ce Site Web, qui :
+- Enfreindrait les lois (sur la diffamation par exemple) ou la réglementation, ou porterait atteinte aux droits de tiers (par exemple les lois sur les droits d'auteur ou sur la vie privée) ou encouragerait les autres à le faire ;
+- Serait obscène, menaçant, violent, injurieux, préjudiciable envers des tiers, notamment des mineurs, porterait atteinte à la vie privée de tiers ou contiendrait des propos de haine, de harcèlement, de discrimination ou tout autre caractère autrement répréhensible ;
+- Usurperait l'identité d'un tiers ou falsifierait l'origine ou les attributs (dont l'âge) d'un utilisateur ou d'un contenu ;
+- Constituerait du courrier indésirable (« spam »), ou toute autre forme de publicité non sollicitée, du matériel promotionnel ou des messages commerciaux, sauf lorsque cela est expressément autorisé ;
+- contiendrait ou redirigerait vers des virus informatiques ou tout autre programme ou code malveillant ;
+- interromprait ou altérerait le fonctionnement normal du Site Web; ou
+- collecterait du contenu ou des informations appartenant à un utilisateur, ou accéderait autrement au Site Web par le biais de moyens automatiques (tels que des spambots, des
+robots ou des scrapers) sans notre autorisation."
+    description_7: "Hopen Project n'a aucune obligation de surveiller le contenu des utilisateurs. Hopen Family peut refuser, reclasser ou supprimer tout contenu si celui-ci est jugé répréhensible. Par conséquent vous assumez les risques relatifs à toute utilisation d'un contenu, notamment quant à son exactitude, exhaustivité ou utilité."
+    title_6: "Licences, droits de reproduction"
+    description_8: "Tous droits réservés. La reproduction du contenu de ce Site Web, en tout ou en partie, est interdite sans la permission écrite de l’auteur (sauf mention particulière). Tout autre matériel contenu sur ce Site Web ne nous appartenant pas : photos, textes, images, logos, noms de produits ou marques citées, etc. est la propriété de leurs détenteurs respectifs."
+    title_7: "Droit à l’image :"
+    description_9: "Toute personne dispose d’un droit exclusif sur son image et sur l’utilisation qui en est faite. Elle peut donc s’opposer à sa reproduction et à sa diffusion.
+Parce que l’image d’une personne est une donnée à caractère personnel, les principes de la loi “informatique et libertés” s’appliquent. La diffusion de l’image d’une personne doit se faire dans le respect des principes protecteurs de la loi du 6 janvier 1978 modifiée."
+    title_8: "Cookies"
+    description_10: "L’utilisateur est informé que, lors de ses visites sur le Site Web, un cookie peut s’installer automatiquement sur son logiciel de navigation. Un cookie est un système qui permet à un Site Web de stocker des informations textuelles au sein du navigateur. Le navigateur enregistre ces données dans des fichiers sur le disque dur de l'ordinateur. Le paramétrage du logiciel de navigation permet d’informer de la présence de cookie et éventuellement de la refuser de la manière décrite à l’adresse suivante : http://www.cnil.fr/"
+    title_9: "Conseils pour les mineurs"
+    description_11: "Hopen Family se préoccupe de la sécurité et du respect de la vie privée de ses utilisateurs, en particulier des enfants. Pour cette raison, les parents souhaitant autoriser l'accès de leurs enfants aux services proposés par Hopen Family doivent les aider à configurer leur compte, surveiller leur accès aux services et déterminer, en tant que représentants légaux, les services et les contenus qu'ils jugent adaptés pour eux. En autorisant leur enfant à accéder à ces services, les parents reconnaissent et acceptent que ces services puissent inclure des services de messagerie électronique, de communauté et de réseaux sociaux."
+    title_10: "Législation applicable et juridiction compétente"
+    description_12: "Ces Conditions Générales seront régies et interprétées selon les lois françaises. Hopen Family décide de soumettre tout différent concernant l'accès, l'utilisation et/ou la souscription de services à travers du Site Web, aux tribunaux français sauf au cas où la loi stipulerait autre chose."

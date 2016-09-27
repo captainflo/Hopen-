@@ -1,18 +1,29 @@
 <div class="body_sign">
-<div class="content">
-  <h1>Pages#mention</h1>
-  <p>Find me in app/views/pages/mention.html.erb</p>
-
-  <%= mail_to "me@domain.com" do %>
-    <strong>Email me:</strong> <span>me@domain.com</span>
-  <% end %>
-  # => <a href="mailto:me@domain.com">
-         <strong>Email me:</strong> <span>me@domain.com</span>
-       </a>
-
-
-
-      <%= link_to t('sign_in.back'), root_path, class: "link_back" %>
+<div class="content_mention">
+  <%= link_to t('sign_in.back'), root_path, class: "link_back" %>
+  <h1><%= t('mention.title') %></h1>
+  <h2 class='title_mention'><%= t('mention.title_1') %></h2>
+  <p><%= t('mention.description_1') %><br>
+    <%= t('mention.description_2') %>
+  </p>
+  <h2 class='title_mention'><%= t('mention.title_2') %></h2>
+  <p><%= t('mention.description_3') %></p>
+  <h2 class='title_mention'><%= t('mention.title_3') %></h2>
+  <p><%= t('mention.description_4') %>
+  <h2 class='title_mention'><%= t('mention.title_4') %></h2>
+  <p><%= t('mention.description_5') %></p>
+  <h2 class='title_mention'><%= t('mention.title_5') %></h2>
+  <p><%= t('mention.description_6') %><br><%= t('mention.description_7')%></p>
+  <h2 class='title_mention'><%= t('mention.title_6') %></h2>
+  <p><%= t('mention.description_8') %></p>
+  <h2 class='title_mention'><%= t('mention.title_7') %></h2>
+  <p><%= t('mention.description_9') %></p>
+  <h2 class='title_mention'><%= t('mention.title_8') %></h2>
+  <p><%= t('mention.description_10') %></p>
+  <h2 class='title_mention'><%= t('mention.title_9') %></h2>
+  <p><%= t('mention.description_11') %></p>
+  <h2 class='title_mention'><%= t('mention.title_10') %></h2>
+  <p><%= t('mention.description_12') %></p>
 </div>
 
 <div class="bg-boxes">
