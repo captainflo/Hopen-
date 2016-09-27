@@ -2,18 +2,15 @@
   background: #50a3a2;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
   background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
-  overflow:scroll;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  margin: 0;
   height: 100%;
 }
-
-.block_principal{
-  margin-top: 60px;
-  max-width: 1400px;
-  min-height: 600px;
-  background-color: white;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 768px){
+  .body_edit {
+    height: auto;
+}
 }
 
 .title_log{
@@ -27,7 +24,7 @@
 
 .avatar {
   display: block;
-  margin: -50px auto 10px auto;
+  margin: 0px auto 10px auto;
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -38,23 +35,24 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid white;
   border-radius: 25px;
+  padding-top: 10px;
 }
 
 .block_edit{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content:space-between;
   max-width: 1200px;
-  height: 350px;
+  height: auto;
   border: 1px solid black;
+  background: #fff;
   border-radius: 10px;
-  margin: auto;
+  padding: 15px;
 }
 
 .block1{
-  width: 300px;
+  min-width: 300px;
   height: 200px;
 }
 

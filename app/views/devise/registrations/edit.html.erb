@@ -1,7 +1,6 @@
 <div class="body_edit">
-  <div class="block_principal">
-    <%= link_to (image_tag"off1.png"), root_path, class: "back" %>
     <div class="edit_avatar_img">
+      <%= link_to (image_tag"off1.png"), root_path, class: "back" %>
       <%= image_tag(resource.avatar,class:"avatar")if resource.avatar? %>
         <div class="name">
           <%= @user.firstname %> <%= @user.lastname %>
@@ -60,5 +59,4 @@
       </div>
       <% end %>
     </div>
-  </div>
 </div>
