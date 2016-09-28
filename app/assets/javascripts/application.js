@@ -16,3 +16,19 @@
 //= require new-age
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+
+  // activer les liens internes, précédé par un #
+  $('a[href^="#"]').click(function(event) {
+    event.preventDefault();
+    // prendre le nom du lien, substr enleve le premier caractere qui est #
+    var ou = $(this).attr("href").substr(1);
+    // trouver le tag <a name=""> correspondant
+    var saut = $("#"+ ou);
+    // aller jusqu'à cet élément
+    $('html, body').animate({
+        scrollTop: saut.offset().top
+    }, 1000);
+  });
+});
