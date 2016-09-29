@@ -80,6 +80,7 @@ fr:
     remember_me: "Se souvenir de moi"
     log: "Connecter"
     back: "Retour"
+    log1: "Première fois ?"
 #################################
   sign_up:
     title: "Enregistrer"
@@ -91,6 +92,8 @@ fr:
     password_confirm: "Confirmation Mot de passe"
     avatar: "Photo profile"
     back: "Retour"
+    rules: "By signing up,you agree to our Terms & Privacy Policy."
+    log1: "Déjà un compte ?"
 ###############################
   edit:
     title: "Modifier l'utilisateur"

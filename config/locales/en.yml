@@ -80,6 +80,7 @@ en:
     remember_me: "Remember me"
     log: "Log in"
     back: "Back"
+    log1: "Have an account?"
 #################################
   sign_up:
     title: "Sign up"
@@ -91,6 +92,8 @@ en:
     password_confirm: "Password confirmation"
     avatar: "Avatar"
     back: "Retour"
+    rules: "By signing up,you agree to our Terms & Privacy Policy."
+    log1: "Already have an account?"
 ###############################
   edit:
     title: "Edit User"

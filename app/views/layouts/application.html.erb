@@ -14,22 +14,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-    // activer les liens internes, précédé par un #
-    $('a[href^="#"]').click(function() {
-    // prendre le nom du lien, substr enleve le premier caractere qui est #
-    var ou = $(this).attr("href").substr(1);
-    // trouver le tag <a name=""> correspondant
-    var saut = $("a[name='"+ ou +"']");
-    // aller jusqu'à cet élément
-    $('html,body').animate({scrollTop: $(saut).offset().top}, 1000);
-    return false;
-    });
-    });
-    </script>
-
+    <script type="text/javascript"></script>
   </head>
 
   <body>

@@ -65,14 +65,66 @@ p{
 .link_logi{
   display: inline-block;
   padding-left: 10px;
+  padding-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  color: #2DAF94;
+  color: #4f4f4F;
   &:hover {
 					color: #33acb7;
           text-decoration: none;
 				}
 }
+
+.link_logi1{
+  display: inline-block;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #33acb7;
+  &:hover {
+					color: #33acb7;
+          text-decoration: none;
+				}
+}
+
+.link_forgot{
+  display: block;
+  margin-top: 18px;
+  float: right;
+  font-weight: 600;
+  color: #33acb7;
+  &:hover {
+					color: #33acb7;
+          text-decoration: none;
+				}
+}
+.remenber_me{
+  display: block;
+  margin-top: 14px;
+  margin-left: 19px;
+  color: #33acb7;
+}
+  .log1{
+    text-align: center;
+    font-weight: 600;
+    color: #4f4f4F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.log2{
+  text-align: center;
+  font-weight: 600;
+  color: #4f4f4F;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
 
 /*The form part*/
 .content {
@@ -83,7 +135,7 @@ p{
   display: block;
   left: 50%;
   max-width: 360px;
-  max-height: 600px;
+  max-height: 650px;
   position: absolute;
   top: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -175,7 +227,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 /*Submit Button*/
 .log {
-  background: #2196f3;
+  background: #4f4f4F;
   border: none;
   border-radius: 2px;
   color: #FFF;
@@ -190,7 +242,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .log:hover {
-  background: #1976d2;
+  background: #4f4f4F;
 }
 
 .log:before, .log:after {
@@ -242,12 +294,13 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 svg{
 /*Set defaults for svg columns. Opacity set to 0 so the elements are invisible before the animation begins and will not show up on browsers without animation*/
-  -webkit-animation: riser 20s infinite;
-  animation: riser 20s infinite;
+  -webkit-animation: riser 10s infinite;
+  animation: riser 10s infinite;
   opacity: 0;
   overflow: visible;
   position: absolute;
 }
+
 
 .bubble{
  /*Set the defaults for the "bubbles". transform-origin should always be the center-point of the object including blank-space within the svg. Since the object should be centered, this is equal to the width of the object. The default bubble is 100px by 100px in an svg object with a width of 200px*/

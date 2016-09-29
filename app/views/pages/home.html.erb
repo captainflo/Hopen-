@@ -229,18 +229,18 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <%= t "footer.copy" %></p>
             <ul class="list-inline">
                 <li>
                     <%= link_to t("footer.privacy"), pages_mention_path, class: "link_back" %>
                 </li>
                 <li>
+                    <%= mail_to "nelly@hopenproject.com", class:"link_back" do %>
+                    <%=t"footer.contact", class:"back_link"%>
+                    <% end %>
                     <%= link_to "Team", pages_team_path, class: "link_back" %>
                 </li>
             </ul>
-            <%= mail_to "nelly@hopenproject.com", class:"link_back_email" do %>
-            <%=t"footer.contact", class:"back_link"%>
-            <% end %>
+            <p>&copy; <%= t "footer.copy" %></p>
         </div>
     </footer>
 </body>

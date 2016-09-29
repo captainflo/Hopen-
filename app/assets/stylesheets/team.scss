@@ -68,7 +68,7 @@
 //////////////Page_mention////////////
 .content_mention{
 /*A box that the form resides in - centered vertically and horizontally based on the window. The max-width and % width combo allow it to resize for small devices*/
-  background: #FFF;
+
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: block;
@@ -84,6 +84,8 @@
   z-index: 2;
   overflow: scroll;
 }
+
 .title_mention{
-  color: blue;
+  color: #4f4f4F;
+  font-weight:bolder;
 }

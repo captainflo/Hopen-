@@ -17,7 +17,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
 
   // activer les liens internes, précédé par un #
   $('a[href^="#"]').click(function(event) {
