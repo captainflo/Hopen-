@@ -301,7 +301,6 @@ svg{
   position: absolute;
 }
 
-
 .bubble{
  /*Set the defaults for the "bubbles". transform-origin should always be the center-point of the object including blank-space within the svg. Since the object should be centered, this is equal to the width of the object. The default bubble is 100px by 100px in an svg object with a width of 200px*/
   -webkit-animation: rotator 20s linear infinite;

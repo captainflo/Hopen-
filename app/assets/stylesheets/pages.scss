@@ -60,10 +60,15 @@ img.page-scroll.navbar-header{
 				}
 }
 
+.icon-coeur-_full:before {
+  content: "\e900";
+}
+
 .navbar-default .navbar-header .navbar-brand {
 color: #2DAF94;
 font-family:"BebasNeueRegular";
 font-size: 25px;
+margin-left: auto;
 &:hover {
         color: #33acb7;
 
