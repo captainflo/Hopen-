@@ -121,12 +121,6 @@ margin-left: auto;
         border-color: transparent;
       }
 
-      @media (max-width: 768px){
-      .navbar-header {
-          float: right;
-      }
-    }
-
     section.features .section-heading {
     margin-bottom: 0px;
 }
@@ -337,3 +331,10 @@ margin-left: auto;
 .text-muted_frineds{
 color:#fff;
 }
+
++@media (max-width: 768px){
+ +.navbar-default .navbar-header .navbar-brand {
+ +  margin-left: 40px;
+ +  margin-top: -50px;
+ +}
+ +}

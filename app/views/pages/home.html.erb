@@ -9,7 +9,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a href="#page-top"><%= image_tag"love2.png", class:" page-scroll navbar-header"%></a>
+                <a class="page-scroll navbar-header" href="#page-top"><span class="icon-coeur_full"></span></a>
                 <a class="navbar-brand page-scroll title_logo" href="#page-top"><%= t "pages.home.header.title"%></a>
             </div>
 
@@ -65,7 +65,6 @@
                             <h2><%= t "pages.home.header.description_1" %><br>
                               <%= t "pages.home.header.description_2" %></h2>
                               <br>
-                              <span class="icon-coeur_full"></span>
                             <a href="#download" class="btn btn-outline btn-xl page-scroll"><%= t "pages.home.header.button"%></a>
                         </div>
                     </div>
@@ -169,7 +168,7 @@
 
 
     <section id="hopen_box">
-      <h2 class="title_hopen">I<%= image_tag"love.png"%>Hopen Family</h2>
+      <h2 class="title_hopen"><%= t"hopen_box.title" %></h2>
       <div class='principal'>
         <div class="element">
           <div class="screen">
@@ -210,7 +209,7 @@
             <hr>
             <div class="friends">
               <!--80X80-->
-              <h2 class="text_friends_title"><%= t "contact.love1"%><%= image_tag "logoblanc.png", class:"fa fa-heart"%> <%= t "contact.love2"%></h2>
+              <h2 class="text_friends_title"><%= t "contact.love1"%><span class="icon-coeur_full4"></span> <%= t "contact.love2"%></h2>
               <ul class="list-inline list-social">
                   <li>
                     <!--80X80-->

@@ -1,5 +1,7 @@
 <div class="body_sign_team">
-  <%= link_to t('sign_in.back'), root_path, class: "link_back_team" %>
+  <%= link_to root_path do %>
+  <span class="icon-cancel-circle"></span>
+  <%end%>
   <h1 class="title_team">The Team</h1>
   <p class='text_team'><%= t "team.description_1"%><br><%= t "team.description_2"%></p>
 

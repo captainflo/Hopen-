@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  font-url('icons.eot?5rgbrz');
-  src:  font-url('icons.eot?5rgbrz#iefix') format('embedded-opentype'),
-    font-url('icons.ttf?5rgbrz') format('truetype'),
-    font-url('icons.woff?5rgbrz') format('woff'),
-    font-url('icons.svg?5rgbrz#icons') format('svg');
+  src:  font-url('icons.eot?vyf1as');
+  src:  font-url('icons.eot?vyf1as#iefix') format('embedded-opentype'),
+    font-url('icons.ttf?vyf1as') format('truetype'),
+    font-url('icons.woff?vyf1as') format('woff'),
+    font-url('icons.svg?vyf1as#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,5 +26,39 @@
 
 .icon-coeur_full:before {
   content: "\e900";
+  font-size: 50px;
+  color: #2daf94;
 }
 
+icon-coeur_full1:before {
+   content: "\e900";
+   display: block;
+   font-size: 60px;
+   margin-left: 150px;
+   margin-bottom: -20px;
+    margin-top: 5px;
+   color: #2daf94;
+ }
+
+ .icon-coeur_full3:before {
+   content: "\e900";
+   font-size: 70px;
+   color: #2daf94;
+ }
+ .icon-coeur_full4:before {
+   content: "\e900";
+   font-size: 70px;
+   color: #fff;
+ }
+
+ .icon-coeur_contour:before {
+   content: "\1f326";
+   color: #fff;
+ }
+ .icon-cancel-circle:before {
+   content: "\ea0d";
+   color: #fff;
+   font-size: 35px;
+   float: right;
+   padding: 10px;
+ }

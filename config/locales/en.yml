@@ -51,14 +51,21 @@ en:
     title_under: "Our app is available on any mobile device! Download now to get started!"
 ###################################
   hopen_box:
+    title: "Features"
+    title_under_3: "Hopen Family has been designed to be the easiest and faster connected tool with your grandparents."
+    title_under_4: "Now more than ever, they will wait for your news."
     title_1: "Grandparents"
-    description_1: "Enjoy their family pictures without having to become geeks."
+    description_1: "Plug the Hopen to any screens"
+    description_6: "Enjoy your family pictures"
+    description_7: "No need to become geeks"
     title_2: "Hopen"
     description_2: "Automatically broadcast the content"
+    description_8: "Directly connected to the Hopen Family App"
+    description_9: "The best gift for your grandparents"
     title_3: "Family"
     description_3: "Post contents via the App"
     description_4: "Manage multi-accounts area"
-    description_5: "Receive family notifications"
+    description_5: "Make your grandparents happy"
     button: "Start Now for Free!"
 ##################################
   contact:

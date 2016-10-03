@@ -1,7 +1,8 @@
   <div class="body_sign">
 <div class="content">
   <%= link_to (image_tag"off2.png"), root_path, class: "back_log" %>
-  <h2 class="title_log"><%=t'sign_up.title'%><%= image_tag"love2.png"%></h2>
+  <span class="icon-coeur_full1"></span>
+  <h2 class="title_log"><%=t'sign_up.title'%></h2>
   <!--Echo out errors here. See example-->
   <!--<p class=error>Error, wrong username or password used. Please, try again.-->
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>

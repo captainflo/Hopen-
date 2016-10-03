@@ -51,14 +51,21 @@ fr:
     title_under: "Notre application est disponible sur l'ensemble de vos terminaux ! Téléchargez-la maintenant et commencez l'aventure"
 ###################################
   hopen_box:
+    title: "Fonctionnalités"
+    title_under_3: "Hopen Family a été pensé comme l'outil de connexion le plus rapide entre la famille et les grands-parents. "
+    title_under_4: "Soyez prêts à partager vos moments avec eux."
     title_1: "Grands-Parents"
-    description_1: "profitent des contenus sans aucune intervention technique"
+    description_1: " Branchez l'Hopen sur tout type d'écrans"
+    description_6: "Profitez des contenus de votre famille"
+    description_7: "Sans devoir devenir expert informatique"
     title_2: "Hopen"
     description_2: "Diffuse automatiquement le contenu"
+    description_8: "Connecté directement à l'application Hopen Family"
+    description_9: "Le meilleur cadeau pour vos grands-parents"
     title_3: "Famille"
-    description_3: "Poste le contenu sur l'app Hopen Family,"
-    description_4: "Gère l'espace multi-comptes"
-    description_5: "Reçoit des notifications de la famille"
+    description_3: "Postez le contenu sur l'application Hopen Family,"
+    description_4: "Gerez l'espace multi-comptes"
+    description_5: "Vos grands-parents seront tellement ravis"
     button: "Commencez maintenant!"
 ##################################
   contact:
